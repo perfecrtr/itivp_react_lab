@@ -3,7 +3,7 @@ import location from './Location.png';
 import bath from './cil_bath.png';
 import bed from './fluent_bed-20-regular.png'
 
-function RealtyCard() {
+export const RealtyCard=()=> {
   return (
     <div className="RealtyCard">
       <img src="../assets/images/card_1.png" alt="Property 1" className="realty-img"/>
@@ -29,5 +29,3 @@ function RealtyCard() {
     </div>
  );
 }
-  
-  export default RealtyCard;

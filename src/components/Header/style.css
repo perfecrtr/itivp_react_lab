@@ -1,0 +1,150 @@
+.header {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    z-index: -1; 
+}
+  
+.navigation {
+    position: fixed;
+    padding-bottom: 10px;
+    background-color: #1B1B1B;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100; 
+}
+  
+.logo img {
+    padding-top: 3vh;
+    height: 50px; 
+    padding-left: 10vw;
+}
+  
+.navigation-list {
+    padding-top: 10px;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding-right: 15vw;
+    gap: 20px;
+  }
+  
+  .navigation-item {
+    display: inline-block;
+  }
+  
+  .navigation-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+.navigation-button-active {
+    color: #FF9505;
+}
+
+.burger-menu {
+    margin-top: 2vh;
+    margin-right: 9vw;
+    display: none; 
+    cursor: pointer;
+}
+  
+.header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    gap: 50px;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+  
+.overlay {
+    color: white;
+    font-size: 60px;
+    width: 100%; 
+    text-align: left; 
+    max-width: 780px; 
+    font-weight: bold;
+}
+  
+.spec_yel {
+    color: #FF9505; 
+}
+  
+.shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Полупрозрачная тень */
+    z-index: 0;
+}
+  
+@media (max-width: 840px) {
+.navigation-list {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    gap: 10px;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #1B1B1B;
+    padding: 0px;
+}
+
+.navigation-item {
+    text-align: center;
+    display: none;
+    margin: 10px 0px 0px 0px;
+    padding-bottom: 20px;
+}
+  
+.burger-menu {
+    display: block; 
+    -webkit-tap-highlight-color: transparent;
+}
+  
+.burger-menu:hover{
+    background-color: transparent;
+}
+
+.header-content {
+    flex-direction: column; 
+    gap: 70px; 
+}
+  
+.overlay {
+    text-align: center; 
+    margin-top: 80px;
+    font-size: 42px;
+}
+
+.header {
+    height: 150vh;
+}
+}

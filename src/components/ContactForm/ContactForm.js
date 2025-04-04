@@ -1,4 +1,6 @@
-function ContactForm() {
+import './style.css';
+
+export const ContactForm=()=> {
   return (
     <div className="ContactForm">
       <div className="ContactForm-text"><span className="spec_yel">Свяжитесь</span> с нами</div>
@@ -23,5 +25,3 @@ function ContactForm() {
     </div>
   );
 }
-    
-    export default ContactForm;
