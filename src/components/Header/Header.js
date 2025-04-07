@@ -17,17 +17,17 @@ export const Header=()=> {
             <li className="navigation-item">
               <button className="navigation-button navigation-button-active">Главная</button>
             </li>
-            <li class="navigation-item">
-              <button className="navigation-button" onclick='window.location.href="pakages/card.html"'>Объекты</button>
+            <li className="navigation-item">
+              <button className="navigation-button">Объекты</button>
             </li>
-            <li class="navigation-item">
-              <button className="navigation-button" onclick='window.location.href="pakages/us.html"'>О компании</button>
+            <li className="navigation-item">
+              <button className="navigation-button">О компании</button>
             </li>
-            <li class="navigation-item">
-              <button className="navigation-button" onclick='window.location.href="pakages/Services.html"'>Услуги</button>
+            <li className="navigation-item">
+              <button className="navigation-button">Услуги</button>
             </li>
-            <li class="navigation-item">
-              <button className="navigation-button" onclick='window.location.href="pakages/Contacts.html"'>Контакты</button>
+            <li className="navigation-item">
+              <button className="navigation-button">Контакты</button>
             </li>
           </ul>
         </nav>

@@ -24,7 +24,7 @@ export const Objects=()=> {
     });
 
     return (
-    <body className="body">
+    <>
       <Header/>
       <main>
         <div className="button-section">
@@ -85,6 +85,6 @@ export const Objects=()=> {
         </div>
       </main>
       <Footer/>
-    </body>
+    </>
     );
 }

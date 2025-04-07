@@ -5,12 +5,12 @@ import { ContactForm } from '../../components/ContactForm/ContactForm.js';
 
 export const Contacts=()=> {
     return (
-    <body className="body">
+    <>
       <Header2/>
-      <main>
+      <main className='contacts-main'>
         <ContactForm/>
       </main>
       <Footer/>
-    </body>
+    </>
     );
 }

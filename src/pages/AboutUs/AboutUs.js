@@ -7,7 +7,7 @@ import {Header2} from '../../components/Header/Header2.js'
 
 export const AboutUs=()=> {
     return (
-    <body className="body">
+    <>
       <Header2/>
       <main>
         <div className="container">
@@ -104,6 +104,6 @@ export const AboutUs=()=> {
         </div>
       </main>
       <Footer/>
-    </body>
+    </>
     );
 }

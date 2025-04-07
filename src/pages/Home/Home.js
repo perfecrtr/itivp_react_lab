@@ -4,7 +4,7 @@ import {Header} from '../../components/Header/Header.js'
 
 export const Home=()=> {
     return (
-    <body className="body">
+    <>
       <Header/>
       <main>
         <div className="about-company">
@@ -32,6 +32,6 @@ export const Home=()=> {
         </div>
       </main>
       <Footer/>
-    </body>
+    </>
     );
 }

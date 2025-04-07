@@ -5,7 +5,7 @@ import {Header2} from '../../components/Header/Header2.js'
 
 export const Services=()=> {
     return (
-    <body className="body">
+    <>
       <Header2/>
       <main>
         <section className="offices-map-section">
@@ -28,6 +28,6 @@ export const Services=()=> {
         </section>
       </main>
       <Footer/>
-    </body>
+    </>
     );
 }
