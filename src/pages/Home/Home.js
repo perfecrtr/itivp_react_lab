@@ -1,7 +1,6 @@
 import './style.css';
-import background_image from './background_2.png'
-import Footer from '../../components/Footer/Footer.js'
-import Header from '../../components/Header/Header.js'
+import {Footer} from '../../components/Footer/Footer.js'
+import {Header} from '../../components/Header/Header.js'
 
 export const Home=()=> {
     return (

@@ -1,8 +1,8 @@
-import logo from '../../../public/logo.png'
+import logo from '../../logo.png'
 import background_image from './background_1.png'
 import menu from './menu.svg'
 import './style.css';
-import ContactForm from '../../components/ContactForm/ContactForm.js'
+import {ContactForm} from '../../components/ContactForm/ContactForm.js'
 
 export const Header=()=> {
     return (
@@ -21,7 +21,7 @@ export const Header=()=> {
               <button className="navigation-button" onclick='window.location.href="pakages/card.html"'>Объекты</button>
             </li>
             <li class="navigation-item">
-              <button className="navigation_button" onclick='window.location.href="pakages/us.html"'>О компании</button>
+              <button className="navigation-button" onclick='window.location.href="pakages/us.html"'>О компании</button>
             </li>
             <li class="navigation-item">
               <button className="navigation-button" onclick='window.location.href="pakages/Services.html"'>Услуги</button>
