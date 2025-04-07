@@ -5,16 +5,7 @@ body {
     background-color: #1B1B1B;
 }
 
-.ContactForm-text {
-    color: white;
-    font-size: 38px;
-    text-align: center;
-    margin-bottom: 30px;
+.contacts-main {
     margin-top: 10vh;
-    font-weight: bold;
-}
-
-.ContactForm {
-    justify-content: center;
     margin-bottom: 10vh;
 }
