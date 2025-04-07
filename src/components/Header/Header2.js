@@ -2,7 +2,6 @@ import logo from '../../logo.png'
 import background_image from './background_1.png'
 import menu from './menu.svg'
 import './style.css';
-import {ContactForm} from '../ContactForm/ContactForm.js'
 
 export const Header2=()=> {
     return (
