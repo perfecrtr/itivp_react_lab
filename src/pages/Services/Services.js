@@ -1,17 +1,14 @@
 import './style.css';
 import {Footer} from '../../components/Footer/Footer.js'
 import {Header2} from '../../components/Header/Header2.js'
-
+import { YandexMap } from '../../components/YandexMap/YandexMap.js';
 
 export const Services=()=> {
     return (
     <>
       <Header2/>
       <main>
-        <section className="offices-map-section">
-          <h2>Наши офисы</h2>
-          <div id="agency-offices-map"></div>
-        </section>
+        <YandexMap/>
         <section className="payment-section">
           <h2>Оплатить</h2>
           <div className="payment-container">
