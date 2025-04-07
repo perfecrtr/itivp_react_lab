@@ -13,25 +13,33 @@ import { useState } from 'react';
 
 export const Objects=()=> {
 
-    document.addEventListener('DOMContentLoaded', function () {
-      const buttons = document.querySelectorAll('.filter-button');
-      buttons.forEach(button => {
-        button.addEventListener('click', function () {
-          buttons.forEach(btn => btn.classList.remove('active'));
-          this.classList.add('active');
-      });
-    });
-    });
+    const buttons = [
+      { value: 'all', label: 'Все' },
+      { value: 'studio', label: 'Студии' },
+      { value: '1bed', label: '1 Спальня' },
+      { value: '2bed', label: '2 Спальни' },
+    ];
+
+    const [activeButton, setActiveButton] = useState(buttons[0].value);
+      const handleButtonClick = (value) => {
+      setActiveButton(value);
+     };
 
     return (
     <>
       <Header/>
       <main>
         <div className="button-section">
-          <button className="filter-button active">Все</button>
-          <button className="filter-button">Студии</button>
-          <button className="filter-button">1 Спальня</button>
-          <button className="filter-button">2 Спальни</button>
+          {buttons.map((button) => (
+            <button
+              key={button.value}
+              className={`filter-button ${activeButton === button.value ? 'active' : ''}`}
+              onClick={() => handleButtonClick(button.value)}
+              data-value={button.value}
+            >
+              {button.label}
+            </button>
+          ))}
         </div>
         <div className="container">
           <RealtyCard
