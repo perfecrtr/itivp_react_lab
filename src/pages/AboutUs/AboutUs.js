@@ -4,8 +4,28 @@ import award_2 from './award_2.png'
 import avatar from './Ellipse 14.png'
 import {Footer} from '../../components/Footer/Footer.js'
 import {Header2} from '../../components/Header/Header2.js'
+import {Carousel} from '../../components/Carousel/Carousel.js'
 
 export const AboutUs=()=> {
+
+    const testimonials = [
+      {
+        name: "Анна Петрова",
+        text: "Очень профессиональные агенты! Помогли найти идеальную квартиру за неделю. Все этапы сделки сопровождали лично.",
+        avatar: avatar
+      },
+      {
+        name: "Мария Петрова",
+        text: "Продали мою квартиру выше рыночной цены. Отдельное спасибо за честную оценку и грамотные рекомендации.",
+        avatar: avatar
+      },
+      {
+        name: "Александра Алексеевна",
+        text: "Здесь вы можете найти дом мечты по вашему выбору без стресса. Здесь вы можете найти дом мечты по вашему выбору без стресса. Здесь вы можете найти.",
+        avatar: avatar
+      }
+    ];
+  
     return (
     <>
       <Header2/>
@@ -64,42 +84,7 @@ export const AboutUs=()=> {
           <section className="testimonials">
             <h2>Что Говорят Клиенты</h2>
             <h3>Наша цель — в основе всего, что мы делаем. Мы делаем счастье наших клиентов нашим приоритетом.</h3>
-            <div className="reviews-slider">
-              <div className="slides-container">
-                <div className="review-slide active">
-                  <div className="client-photo">
-                    <img src={avatar} alt="Иван Петров" loading="lazy"/>
-                  </div>
-                  <div className="review-content">
-                    <h3>Анна Петрова</h3>
-                    <p className="review-text">"Очень профессиональные агенты! Помогли найти идеальную квартиру за неделю. Все этапы сделки сопровождали лично."</p>
-                  </div>
-                </div>
-                <div className="review-slide">
-                  <div className="client-photo">
-                    <img src={avatar} alt="Елена Смирнова" loading="lazy"/>
-                  </div>
-                  <div className="review-content">
-                    <h3>Елена Смирнова</h3>
-                    <p className="review-text">"Продали мою квартиру выше рыночной цены. Отдельное спасибо за честную оценку и грамотные рекомендации."</p>
-                  </div>
-                </div>
-                <div className="review-slide">
-                  <div className="client-photo">
-                    <img src={avatar} alt="Елена Смирнова" loading="lazy"/>
-                  </div>
-                  <div className="review-content">
-                    <h3>Александра Алексеевна</h3>
-                    <p className="review-text">"Здесь вы можете найти дом мечты по вашему выбору без стресса. Здесь вы можете найти дом мечты по вашему выбору без стресса. Здесь вы можете найти."</p>
-                  </div>
-                </div>
-              </div>
-              <div className="slider-controls">
-                <button className="prev-btn" aria-label="Предыдущий отзыв">‹</button>
-                <div className="dots-container"/>
-                <button className="next-btn" aria-label="Следующий отзыв">›</button>
-              </div>
-            </div>
+            <Carousel items={testimonials} interval={5000}/>
           </section>
         </div>
       </main>
