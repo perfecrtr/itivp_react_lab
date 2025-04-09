@@ -7,7 +7,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/itivp_react_lab">
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/objects" element={<Objects/>}/>
