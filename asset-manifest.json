@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/itivp_react_lab/static/css/main.ee3b69d7.css",
-    "main.js": "/itivp_react_lab/static/js/main.6c72c381.js",
+    "main.js": "/itivp_react_lab/static/js/main.acd141cb.js",
     "static/js/453.2eedeafb.chunk.js": "/itivp_react_lab/static/js/453.2eedeafb.chunk.js",
     "static/media/background_2.png": "/itivp_react_lab/static/media/background_2.fa34d7d8def3416f5371.png",
     "static/media/card_3.png": "/itivp_react_lab/static/media/card_3.6cea84e09e71fe6245e2.png",
@@ -16,11 +16,11 @@
     "static/media/menu.svg": "/itivp_react_lab/static/media/menu.e6dc0f36f7f1e1f6844e6c97e2484de6.svg",
     "index.html": "/itivp_react_lab/index.html",
     "main.ee3b69d7.css.map": "/itivp_react_lab/static/css/main.ee3b69d7.css.map",
-    "main.6c72c381.js.map": "/itivp_react_lab/static/js/main.6c72c381.js.map",
+    "main.acd141cb.js.map": "/itivp_react_lab/static/js/main.acd141cb.js.map",
     "453.2eedeafb.chunk.js.map": "/itivp_react_lab/static/js/453.2eedeafb.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ee3b69d7.css",
-    "static/js/main.6c72c381.js"
+    "static/js/main.acd141cb.js"
   ]
 }
