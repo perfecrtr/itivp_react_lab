@@ -6,14 +6,14 @@ body {
 }
 
 .button-section {
-    margin-top: 20px;
+    margin-top: 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center; 
     gap: 20px;
     padding: 20px;
     background-color: #1B1B1B;
- }
+}
   
 .more-section {
     margin-top: 25px;
@@ -27,22 +27,6 @@ body {
     font-size: 14px;
     color: #FFFBFB;
     margin-bottom: 30px;
-}
-
-.filter-button {
-    padding: 10px 20px; 
-    font-size: 16px;
-    color: #FFFBFB;
-    background-color: #1B1B1B;; 
-    border: 1px solid #ccc; 
-    border-radius: 10px; 
-    cursor: pointer; 
-    transition: background-color 0.3s, color 0.3s, border-color 0.3s; 
- }
-  
-.filter-button.active {
-    color: #FF9505; 
-    border-color: #FF9505; 
 }
 
 .container {

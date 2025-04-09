@@ -14,8 +14,8 @@ export const Services=()=> {
           <div className="payment-container">
             <form id="payment-form">
               <div className="form-group">
-                <label for="amount">Сумма (BYN):</label>
-                <input type="number" id="amount" name="amount" value="50" max="10000" min="0" step="1" maxlength="5" required/>
+                <label className="amount">Сумма (BYN):</label>
+                <input type="number" id="amount" name="amount" defaultValue="50" max="10000" min="0" step="1" maxLength="5" required/>
               </div>
               <div id="card-element"/>
               <div id="card-errors" role="alert"/>
