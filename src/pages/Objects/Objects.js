@@ -12,6 +12,64 @@ import {DropdownFilter} from '../../components/DropdownFilter/DropdownFilter.js'
 import {RealtyCard} from '../../components/RealtyCard/RealtyCard.js'
 import { useState, useEffect } from 'react';
 
+const ALL_CARDS = [
+  {
+      id: 1,
+      imageSrc: card_1_img,
+      locationText: "Зелёный Луг, Минск.",
+      bedText: "1 Спальня",
+      bathText: "1 Ванна",
+      squareText: "535 кв. м.",
+      type: '1bed' 
+  },
+  {
+      id: 2,
+      imageSrc: card_2_img,
+      locationText: "Домбровка, Минск.",
+      bedText: "2 Спальни",
+      bathText: "3 Ванны",
+      squareText: "535 кв. м.",
+      type: '2bed'
+  },
+  {
+      id: 3,
+      imageSrc: card_3_img,
+      locationText: "Лебяжий, Минск.",
+      bedText: "1 Спальня",
+      bathText: "1 Ванна",
+      squareText: "535 кв. м.",
+      type: '1bed'
+  },
+  {
+      id: 4,
+      imageSrc: card_4_img,
+      locationText: "Уручье, Минск.",
+      bedText: "1 Спальня",
+      bathText: "1 Ванна",
+      squareText: "535 кв. м.",
+      type: '1bed'
+  },
+  {
+      id: 5,
+      imageSrc: card_5_img,
+      locationText: "Малиновка, Минск.",
+      bedText: "1 Спальня",
+      bathText: "1 Ванна",
+      squareText: "535 кв. м.",
+      type: '1bed'
+  },
+  {
+      id: 6,
+      imageSrc: card_6_img,
+      locationText: "Ольшанка, Гродно.",
+      bedText: "1 Спальня",
+      bathText: "1 Ванна",
+      squareText: "535 кв. м.",
+      type: '1bed'
+  }
+
+];
+
 export const Objects=()=> {
 
     const filterOptions = [
@@ -21,82 +79,18 @@ export const Objects=()=> {
       { value: '2bed', label: '2 Спальни' },
     ];
 
-    const allCards = [
-      {
-          id: 1,
-          imageSrc: card_1_img,
-          locationText: "Зелёный Луг, Минск.",
-          bedText: "1 Спальня",
-          bathText: "1 Ванна",
-          squareText: "535 кв. м.",
-          type: '1bed' 
-      },
-      {
-          id: 2,
-          imageSrc: card_2_img,
-          locationText: "Домбровка, Минск.",
-          bedText: "2 Спальни",
-          bathText: "3 Ванны",
-          squareText: "535 кв. м.",
-          type: '2bed'
-      },
-      {
-          id: 3,
-          imageSrc: card_3_img,
-          locationText: "Лебяжий, Минск.",
-          bedText: "1 Спальня",
-          bathText: "1 Ванна",
-          squareText: "535 кв. м.",
-          type: '1bed'
-      },
-      {
-          id: 4,
-          imageSrc: card_4_img,
-          locationText: "Уручье, Минск.",
-          bedText: "1 Спальня",
-          bathText: "1 Ванна",
-          squareText: "535 кв. м.",
-          type: '1bed'
-      },
-      {
-          id: 5,
-          imageSrc: card_5_img,
-          locationText: "Малиновка, Минск.",
-          bedText: "1 Спальня",
-          bathText: "1 Ванна",
-          squareText: "535 кв. м.",
-          type: '1bed'
-      },
-      {
-          id: 6,
-          imageSrc: card_6_img,
-          locationText: "Ольшанка, Гродно.",
-          bedText: "1 Спальня",
-          bathText: "1 Ванна",
-          squareText: "535 кв. м.",
-          type: '1bed'
-      }
-  
-    ];
-
     const [activeFilter, setActiveFilter] = useState('all');
-    const [visibleCards, setVisibleCards] = useState(allCards);
+    const [visibleCards, setVisibleCards] = useState(ALL_CARDS);
     const [showAll, setShowAll] = useState(false);
 
     useEffect(() => {
-        if (activeFilter === 'all') {
-            setVisibleCards(allCards);
-        } else {
-            const filtered = allCards.filter(card => {
-                if (activeFilter === 'studio') {
-                    return card.bedText.toLowerCase().includes('студия');
-                }
-                return card.type === activeFilter;
-            });
-            setVisibleCards(filtered);
-        }
-        setShowAll(false); 
-    }, [activeFilter, allCards]);
+      const filtered = activeFilter === 'all' 
+        ? ALL_CARDS 
+        : ALL_CARDS.filter(card => card.type === activeFilter);
+      
+      setVisibleCards(filtered);
+      setShowAll(false);
+    }, [activeFilter]); 
 
     const handleShowMore = () => {
         setShowAll(true);
